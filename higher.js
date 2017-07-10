@@ -2,7 +2,7 @@
 function myHigherFunction (func) {
     console.log('myHigherFunction');
 
-func ();
+return outsideFunction;
 
 }
 
@@ -11,6 +11,5 @@ function outsideFunction () {
     console.log('outsideFunction');
 }
 
-// outsideFunction (); //←関数呼び出し
-
-myHigherFunction (outsideFunction); //関数渡し
+let returnValue =myHigherFunction (); 
+returnValue();
